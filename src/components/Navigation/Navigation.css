@@ -1,0 +1,59 @@
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.navbar h2 {
+    color: #fbff00;
+    font-weight: 600;
+}
+
+#nav-links {
+    display: flex;
+}
+
+#nav-links li {
+    list-style: none;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+#nav-links li:hover a {
+    color: #fbff00;
+}
+#nav-links li:last-child a {
+    margin: 0;
+}
+
+.hire-btn {
+    background-color: #fbff00;
+    padding: 6px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+    background-color: #ffd900;
+}
+
+#contact-form-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+}
+
+
