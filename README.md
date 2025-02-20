@@ -1,8 +1,14 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+This Portfolio was built with React and Custom CSS. Dev setup with Vite and dist for a structured build.
+Emailjs integrated for routed emails for clients
+
+# Brand
+W.B.C Integrations
+offering project help and full stack application development
+
+Full website available at:
+https://wbc-integrations.onrender.com/

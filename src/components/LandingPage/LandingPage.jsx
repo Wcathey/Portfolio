@@ -1,4 +1,4 @@
-import { NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './LandingPage.css'
 import { FaConnectdevelop } from "react-icons/fa";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
@@ -24,16 +24,16 @@ function LandingPage() {
 
     const Redirect = (e) => {
         e.preventDefault()
-        if(e.target.innerText === 'Linkedin' || e.target.innerText === 'Lets Connect!') {
-        window.location.replace("https://linkedin.com/in/william-cathey-398455337")
+        if (e.target.innerText === 'Linkedin' || e.target.innerText === 'Lets Connect!') {
+            window.location.replace("https://linkedin.com/in/william-cathey-398455337")
         }
-        if(e.target.innerText === 'Github') {
+        if (e.target.innerText === 'Github') {
             window.location.replace("https://github.com/Wcathey")
         }
-        if(e.target.innerText === 'SuperProf') {
+        if (e.target.innerText === 'SuperProf') {
             window.location.replace("https://www.superprof.com/ir/28085740-624a77")
         }
-        if(e.target.innerText === 'Upwork') {
+        if (e.target.innerText === 'Upwork') {
             window.location.replace("https://www.upwork.com/freelancers/~010cc996229dd64140?mp_source=share")
         }
     }
@@ -54,34 +54,34 @@ function LandingPage() {
             </div>
 
 
-            <div className='guarantee' onClick={(e) => {
-                e.preventDefault();
-                window.location.replace("https://www.coursereport.com/schools/app-academy")
-            }}>
+            <div className='guarantee'>
                 <div className='item'>
                     <div className='icon'>
                         <IoShieldCheckmarkOutline />
                     </div>
                     <div className='info'>
                         <h3>Certified</h3>
-                        <p>App Academy Graduate</p>
+                        <p onClick={(e) => {
+                            e.preventDefault();
+                            window.location.replace("https://www.coursereport.com/schools/app-academy")
+                        }}>App Academy Graduate</p>
                     </div>
                     <div className='chevron'>
                         <FaChevronRight />
                     </div>
 
                 </div>
-                <div className='item' onClick={(e) => {
-                    e.preventDefault();
-                    window.location.replace("https://github.com/Wcathey");
-
-                }}>
+                <div className='item' >
                     <div className='icon'>
                         <IoShieldCheckmarkOutline />
                     </div>
                     <div className='info'>
                         <h3>Multiple</h3>
-                        <p>Completed Projects</p>
+                        <p onClick={(e) => {
+                            e.preventDefault();
+                            window.location.replace("https://github.com/Wcathey");
+
+                        }}>Completed Projects</p>
                     </div>
                     <div className='chevron'>
                         <FaChevronRight />
@@ -89,17 +89,17 @@ function LandingPage() {
 
                 </div>
                 <div className='item'>
-                        <div className='icon'>
-                            <IoShieldCheckmarkOutline />
-                        </div>
-                        <div className='info' id="gaur-right">
-                            <h3>Guaranteed</h3>
-                            <p>Customer Satisfaction</p>
-                        </div>
-                        <div className='chevron'>
+                    <div className='icon'>
+                        <IoShieldCheckmarkOutline />
+                    </div>
+                    <div className='info' id="gaur-right">
+                        <h3>Guaranteed</h3>
+                        <p>Customer Satisfaction</p>
+                    </div>
+                    <div className='chevron'>
                         <FaChevronRight />
                     </div>
-                    </div>
+                </div>
             </div>
 
             <h5 className='seperator'>Who I am</h5>
@@ -138,20 +138,20 @@ function LandingPage() {
             </div>
 
             <h5 className='seperator'>My Skills</h5>
-                <div className="skills">
-                    <div className="left">
-                        <div className="info">
-                            <h3>What My Programming Skills Include</h3>
-                            <p> I build full stack applications using cloud based systems, local and remote servers
-                                and present a responsive user interface that achieves goals and solutions.
-                            </p>
+            <div className="skills">
+                <div className="left">
+                    <div className="info">
+                        <h3>What My Programming Skills Include</h3>
+                        <p> I build full stack applications using cloud based systems, local and remote servers
+                            and present a responsive user interface that achieves goals and solutions.
+                        </p>
 
-                        </div>
                     </div>
+                </div>
 
 
                 <div className="right">
-                <div className="item">
+                    <div className="item">
                         <IoLogoNodejs />
                     </div>
                     <div className="item">
@@ -161,13 +161,13 @@ function LandingPage() {
                         <FaReact />
                     </div>
                     <div className="item">
-                         <FaHtml5 />
+                        <FaHtml5 />
                     </div>
                     <div className="item">
                         <FaCss3Alt />
                     </div>
                 </div>
-                </div>
+            </div>
 
             <footer>
                 <div className="start">
@@ -178,7 +178,7 @@ function LandingPage() {
 
                 <div className='cols'>
                     <div className="about-col">
-                    <h3>William Cathey</h3>
+                        <h3>William Cathey</h3>
                         <p>FullStack Developer</p>
 
 
@@ -194,15 +194,15 @@ function LandingPage() {
                             e.preventDefault();
                             window.location.replace("https://leetcode.com/")
                         }}>Leetcode</p>
-                           <p onClick={(e) => {
+                        <p onClick={(e) => {
                             e.preventDefault();
                             window.location.replace("https://cssbattle.dev/")
                         }}>CSS Battles</p>
-                         <p onClick={(e) => {
+                        <p onClick={(e) => {
                             e.preventDefault();
                             window.location.replace("https://www.codewars.com/dashboard")
                         }}>Code Wars</p>
-                         <p onClick={(e) => {
+                        <p onClick={(e) => {
                             e.preventDefault();
                             window.location.replace("https://react-icons.github.io/react-icons/")
                         }}>React Icons</p>
