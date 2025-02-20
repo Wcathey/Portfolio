@@ -1,10 +1,10 @@
 {
-  "name": "my-react-vite-template",
+  "name": "wbc-integrations",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "homepage": "https://wbc-integrations.onrender.com",
   "scripts": {
-    "start":"vite",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
