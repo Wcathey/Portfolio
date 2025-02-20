@@ -12,30 +12,7 @@
     font-weight: 600;
 }
 
-#nav-links {
-    display: flex;
-}
-
-#nav-links li {
-    list-style: none;
-}
-
-#nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-    margin-right: 25px;
-    transition: color 0.3s ease;
-}
-
-#nav-links li:hover a {
-    color: #fbff00;
-}
-#nav-links li:last-child a {
-    margin: 0;
-}
-
-.hire-btn {
+.navbar button {
     background-color: #fbff00;
     padding: 6px 30px;
     border: none;
@@ -43,17 +20,36 @@
     cursor: pointer;
     border-radius: 6px;
     transition: background-color 0.3s ease;
+    font-weight: 500;
+
 }
 
-.hire-btn:hover {
+.navbar button:hover {
     background-color: #ffd900;
 }
 
-#contact-form-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 20%;
+
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: block;
+        padding: 10px;
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+
+    }
+
+    .navbar h2 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+
+    }
+
+    .navbar button {
+        font-size: 15px;
+        padding: 5px;
+        width: 100%;
+
+    }
 }
-
-

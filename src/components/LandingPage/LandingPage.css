@@ -306,7 +306,89 @@ footer .cols .links-col p {
         margin: 0 auto;
     }
 
-    
+    .skills {
+        padding: 0;
+        display: grid;
+        width: 100%;
+        margin:0;
+
+    }
+    .skills .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+    }
+
+    .skills .left {
+        width: 100%;
+    }
 
 
+
+    footer {
+        position:relative;
+        background-color: #1c1c1c;
+        padding: 0;
+        margin-top: 100px;
+
+    }
+    footer .start p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    footer .start h3 {
+        font-size: 20px;
+    }
+
+    footer .start {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        background-color: #ffd900;
+        padding: 10px;
+        border-radius: 15px;
+        width: 100%;
+        top: -40%;
+        left: 0;
+
+    }
+
+    footer .start button {
+        font-weight: bold;
+    }
+
+    footer .cols .links-col {
+        padding: 5px;
+
+
+    }
+
+    footer .cols .links-col a,
+    footer .cols .links-col p {
+        display: block;
+        text-decoration: none;
+        color: #7b7b7b;
+        font-size: 14px;
+        text-align: left;
+        padding-left: 15px;
+
+
+        cursor: pointer;
+    }
+
+    .business-col h3 {
+       font-size: 15px;
+    }
+
+    .business-col {
+        padding: 0 5px ;
+    }
+
+    .business-col p {
+        text-align: left;
+
+    }
 }

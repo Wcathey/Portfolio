@@ -1,5 +1,4 @@
 import { NavLink} from 'react-router-dom';
-
 import './LandingPage.css'
 import { FaConnectdevelop } from "react-icons/fa";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
