@@ -7,10 +7,7 @@ function Navigation () {
   const [showForm, setShowForm] = useState(false);
   const btnRef = useRef();
 
-  const toggleForm = (e) => {
-    e.preventDefault();
-    setShowForm(!showForm);
-  };
+  
 
   useEffect(() => {
     if(!showForm) return;

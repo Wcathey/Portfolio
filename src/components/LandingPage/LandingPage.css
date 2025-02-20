@@ -45,24 +45,27 @@
     margin-top: 50px;
     padding: 0 50px;
     display: flex;
-    flex-wrap: nowrap;
-    gap: 24px;
+    gap: 10px;
+    width: 100%;
 
 }
 
 .guarantee .item {
     background: #292b2e;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 100px;
     width: 100%;
     border-radius: 10px;
-    padding: 0 30px;
-    border: 1px solid transparent;
+    padding: 0 24px;
+
     cursor: pointer;
     transition: all 0.3s ease;
 
+}
+
+#gaur-right h3 {
+    font-size: 25px;
 }
 
 .guarantee .item:hover{
@@ -70,7 +73,8 @@
 }
 
 .guarantee .item .icon {
-    width: 46px;
+    width: fit-content;
+    padding: 10px;
     height: 46px;
     background-color: #fff;
     border-radius: 50%;
@@ -79,6 +83,7 @@
     justify-content: center;
     transition: background-color 0.3s ease;
     font-size: 30px;
+    margin-right: 10px;
 }
 
 .guarantee .item:hover .icon {
@@ -86,8 +91,7 @@
 }
 
 .guarantee .item .info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
 }
 
@@ -106,6 +110,7 @@
     color: #fff;
     font-size: 30px;
     transition: color 0.3s ease;
+    margin-left: 1rem;
 }
 
 .chevron:hover {
@@ -390,5 +395,8 @@ footer .cols .links-col p {
     .business-col p {
         text-align: left;
 
+    }
+    .guarantee .item {
+        padding: 0 10px
     }
 }

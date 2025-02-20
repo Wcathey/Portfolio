@@ -92,7 +92,7 @@ function LandingPage() {
                         <div className='icon'>
                             <IoShieldCheckmarkOutline />
                         </div>
-                        <div className='info'>
+                        <div className='info' id="gaur-right">
                             <h3>Guaranteed</h3>
                             <p>Customer Satisfaction</p>
                         </div>
