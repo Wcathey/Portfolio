@@ -8,6 +8,8 @@ import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
+import { FaDiagramProject } from "react-icons/fa6";
+
 
 
 
@@ -25,16 +27,16 @@ function LandingPage() {
     const Redirect = (e) => {
         e.preventDefault()
         if (e.target.innerText === 'Linkedin' || e.target.innerText === 'Lets Connect!') {
-            window.location.replace("https://linkedin.com/in/william-cathey-398455337")
+            window.open("https://linkedin.com/in/william-cathey-398455337", "_blank")
         }
         if (e.target.innerText === 'Github') {
-            window.location.replace("https://github.com/Wcathey")
+            window.open("https://github.com/Wcathey", "_blank")
         }
         if (e.target.innerText === 'SuperProf') {
-            window.location.replace("https://www.superprof.com/ir/28085740-624a77")
+            window.open("https://www.superprof.com/ir/28085740-624a77", "_blank")
         }
         if (e.target.innerText === 'Upwork') {
-            window.location.replace("https://www.upwork.com/freelancers/~010cc996229dd64140?mp_source=share")
+            window.open("https://www.upwork.com/freelancers/~010cc996229dd64140?mp_source=share", "_blank")
         }
     }
 
@@ -63,7 +65,7 @@ function LandingPage() {
                         <h3>Certified</h3>
                         <p onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("https://www.coursereport.com/schools/app-academy")
+                            window.open("https://www.coursereport.com/schools/app-academy", "_blank")
                         }}>App Academy Graduate</p>
                     </div>
                     <div className='chevron'>
@@ -79,7 +81,7 @@ function LandingPage() {
                         <h3>Multiple</h3>
                         <p onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("https://github.com/Wcathey");
+                            window.open("https://github.com/Wcathey", "_blank");
 
                         }}>Completed Projects</p>
                     </div>
@@ -149,7 +151,6 @@ function LandingPage() {
                     </div>
                 </div>
 
-
                 <div className="right">
                     <div className="item">
                         <IoLogoNodejs />
@@ -169,6 +170,84 @@ function LandingPage() {
                 </div>
             </div>
 
+
+            <div className='projects-container'>
+
+            <h5> Projects <span><FaDiagramProject /></span>
+            </h5>
+            <div className="projects">
+                <div className="projects-left" id="mirror">
+                    <div className="projects-info">
+                        <h2 >Mirror</h2>
+                        <p>  Personalized AI-driven facial scanning and beauty suggestions.
+                            Augmented reality for real-time try-ons.
+                            Customizable makeup filters for instant transformations.
+                            Mirror uses advanced facial scanning, AI, and AR to provide tailored recommendations for accessories, colors, and makeup that complement your natural features. Were here to help you look and feel like your most authentic self.
+                        </p>
+                        <h3>Backend: <span>Flask</span></h3>
+                        <h3>DataBase: <span>PostgreSQL, sqlAlchemy</span></h3>
+                        <h3>Frontend: <span>React, Redux</span></h3>
+                        <h3>Integrations: <span>DeepAR SDK</span></h3>
+                        <h3>Languages: <span>Python, JSX, SQL, Javascript, html, css</span></h3>
+                    </div>
+                </div>
+
+                <div className="projects-right">
+                    <div className="project-image">
+                        <img src="mirror-example-eyeshadow.png" alt="eyeshadow-camera-filter" />
+                    </div>
+                    <div className="project-image">
+                        <img src="mirror-example-lipstick.jpeg" alt="lipstick-camera-filter" />
+                    </div>
+                </div>
+            </div>
+
+            <div className="projects">
+                <div className="projects-left" id="scanner">
+                    <div className="projects-info">
+                        <h2 >Celeri-Scan</h2>
+                        <p> Celeri-Scan is a mobile document scanner app that captures images via mobile camera or desktop webcams. Built with a mobile influenced Ui and features that gaurantee user authentication and cloud based data management. Capture images and find edges to straighten a photo with the built in scanner ran off jscanify; an open source package designed by coloonel parrot https://colonelparrot.github.io/jscanify/</p>
+                        <h3>Backend: <span>Flask</span></h3>
+                        <h3>DataBase: <span>PostgreSQL, sqlAlchemy</span></h3>
+                        <h3>Frontend: <span>React, Redux</span></h3>
+                        <h3>Integrations: <span>jscanify, Opencv, Cloudinary</span></h3>
+                        <h3>Languages: <span>Python, JSX, SQL, Javascript, css</span></h3>
+                    </div>
+                </div>
+
+                <div className="projects-right">
+                    <div className="project-image">
+                        <img src="celeri-scan-dashboard.png" alt="scanner-app-dashboard" />
+                    </div>
+                    <div className="project-image">
+                        <img src="celeri-scan-example.png" alt="scanner-app-papers" />
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="projects">
+                <div className="projects-left" id="wpb">
+                    <div className="projects-info">
+                        <h2 >Will Pay Bookings</h2>
+                        <p>Will-Pay Bookings is a mock-up of Airbnb, designed to let users easily book reservations for vacation rentals, hotels, and unique stays. The platform features a simple and intuitive interface where users can browse listings, check availability, and make secure bookings. Whether youre looking for a weekend getaway or a long-term stay, Will-Pay Bookings provides a seamless experience for finding and reserving accommodations.</p>
+                        <h3>Backend: <span>Express</span></h3>
+                        <h3>DataBase: <span>PostgreSQL, Sequelize</span></h3>
+                        <h3>Frontend: <span>React, Redux</span></h3>
+                        <h3>Languages: <span>Javascript, JSX, SQL, html, css</span></h3>
+                    </div>
+                </div>
+                <div className="projects-right">
+                    <div className="project-image">
+                        <img src="wpb-dashboard.png" alt="booking-app-dashboard" />
+                    </div>
+                    <div className="project-image">
+                        <img src="wpb-example.png" alt="booking-page-example" />
+
+                    </div>
+                </div>
+                </div>
+                </div>
             <footer>
                 <div className="start">
                     <h3>Start a project</h3>
@@ -188,23 +267,23 @@ function LandingPage() {
                         <NavLink to="/">Home</NavLink>
                         <p onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("https://developer.mozilla.org/en-US/")
+                            window.open("https://developer.mozilla.org/en-US/", "_blank")
                         }}>MDN</p>
                         <p onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("https://leetcode.com/")
+                            window.open("https://leetcode.com/", "_blank")
                         }}>Leetcode</p>
                         <p onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("https://cssbattle.dev/")
+                            window.open("https://cssbattle.dev/", "_blank")
                         }}>CSS Battles</p>
                         <p onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("https://www.codewars.com/dashboard")
+                            window.open("https://www.codewars.com/dashboard", "_blank")
                         }}>Code Wars</p>
                         <p onClick={(e) => {
                             e.preventDefault();
-                            window.location.replace("https://react-icons.github.io/react-icons/")
+                            window.open("https://react-icons.github.io/react-icons/", "_blank")
                         }}>React Icons</p>
                     </div>
                     <div className="links-col">
